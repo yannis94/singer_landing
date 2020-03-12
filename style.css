@@ -9,12 +9,27 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+ font-family: "Canela";
+ src: url("/fonts/Canela-Black.otf") format("otf");
+}
+
+h2, h1, h3 {
+    font-family: "Canela";
+}
+
+.title_section {
+    font-size: 36px;
 }
 
 #nav_top {
     position: sticky;
     top: 0;
     z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 #section1_head {
@@ -156,7 +171,7 @@ body {
   width: var(--elementWidth);
   min-width: var(--elementWidth);
   height: 200px;
-  padding: 5px;
+  padding: 15px;
   box-sizing: border-box;
 }
 
@@ -187,11 +202,11 @@ body {
 }
 
 #participant {
-    background-image: url("images/andreas-brucker-630339-unsplash.jpg");
+    background-image: url("images/participant.png");
     background-size: cover;
 }
 #spectateur {
-    background-image: url("images/max-bender-580753-unsplash.jpg");
+    background-image: url("images/spectateur.png");
     background-size: cover;
 }
 
@@ -237,7 +252,8 @@ body {
     justify-content: space-between;
 }
 #inscr_top h3{
-    margin-top: 20%;
+    font-size: 45px;
+    margin-top: 15%;
     margin-left: -10%;
     z-index: 2;
 }
