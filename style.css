@@ -1,0 +1,310 @@
+
+:root {
+  /* la largeur d'un élément, au départ à 100px mais ensuite mis à jour dans le JS */
+  --elementWidth: 100px;
+  /* la largeur des contrôles gauche / droite */
+  --controlWidth: 50px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#nav_top {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#section1_head {
+    z-index: -5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#section_top {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#CTA_top {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#section_two {
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+#countdown {
+    display: flex;
+}
+
+.countdown_box {
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#section_four {
+    padding: 50px;
+}
+
+#jury_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+#section_five {
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/deroulement_desktop.png');
+    background-size: cover;
+    background-position: -5vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 5vh;
+    color: white;
+}
+
+
+.wrap_container {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.wrapper {
+  height: 100%;
+  animation: title_anim 10s infinite;
+}
+
+.element {
+  height: 100%;
+  color: white;
+  font-size: 50px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+#section_six {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+/*-------------------------------------------------*/
+
+#carousel {
+  width: 90%;
+  display: flex;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.carousel-left-control, .carousel-right-control {
+  width: var(--controlWidth);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.carousel-left-control:hover, .carousel-right-control:hover {
+    transform: scale(1.2);
+}
+
+.carousel-visible {
+  width: calc(100% - var(--controlWidth));
+  overflow: hidden;
+} 
+
+.carousel-all-elements {
+  display: flex;
+  transition: 0.4s ease;
+}
+
+.carousel-element {
+  width: var(--elementWidth);
+  min-width: var(--elementWidth);
+  height: 200px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.carousel-element img {
+  width: 100%;
+}
+
+/*---------------------------------------------------*/
+
+
+#section_height {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    overflow: hidden;
+}
+.choice {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2.5s;
+    overflow: hidden;
+}
+.choice:hover {
+    transform: scale(1.1);
+}
+
+#participant {
+    background-image: url("images/andreas-brucker-630339-unsplash.jpg");
+    background-size: cover;
+}
+#spectateur {
+    background-image: url("images/max-bender-580753-unsplash.jpg");
+    background-size: cover;
+}
+
+#popup_form {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    display: none;
+}
+
+#popup_close {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    transition: 0.4s;
+}
+#popup_close:hover {
+    transform: scale(0.8);
+}
+
+#inscription {
+    position: relative;
+    top: -90%;
+    left: 10%;
+    width: 40%;
+    background-color: lightgray;
+    padding: 15px;
+}
+#inscription input {
+    margin-top: 20px;
+}
+
+#inscr_top {
+    width: 100%;
+    height: 50%;
+    background-color: gray;
+    padding-left: 52%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#inscr_top h3{
+    margin-top: 20%;
+    margin-left: -10%;
+    z-index: 2;
+}
+#inscr_top ul {
+    list-style: none;
+    padding: 0;
+}
+#inscr_top li {
+    display: flex;
+    align-items: flex-start;
+}
+#inscr_top img {
+    margin-right: 10px;
+    width: 20px;
+}
+
+
+#inscr_bottom {
+    width: 100%;
+    height: 50%;
+    padding-left: 52%;
+    background-color: white;
+}
+
+#footer {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+#footer_logo {
+    width: 25%;
+}
+#footer_middle {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+#footer_RS {
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+}
+#footer_RS img {
+    margin-right: 10px;
+}
+
+
+
+@keyframes title_anim {
+    0% {transform: translateY(0)}
+    10% {transform: translateY(0)}
+    20% {transform: translateY(0)}
+    30% {transform: translateY(0px)}
+    40% {transform: translateY(-100px)}
+    50% {transform: translateY(-100px)}
+    60% {transform: translateY(-100px)}
+    70% {transform: translateY(-200px)}
+    80% {transform: translateY(-200px)}
+    90% {transform: translateY(-200px)}
+    100% {transform: translateY(-200px)}
+}
+
+@media (max-width: 750px) {
+    #section_five {
+        background-image: url('images/deroulement_mobile.png');
+        height: 150vh;
+    }
+}
