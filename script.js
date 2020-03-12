@@ -67,11 +67,11 @@ countdown_div.forEach(e => {
     }
 });
 
-// let btn_top = document.querySelector("#btn_top-form");
+let btn_top = document.querySelector("#btn_top-form");
 
-// btn_top.addEventListener("clic", function () {
-//     document.querySelector("#inscription").scrollIntoView();
-// })
+btn_top.addEventListener("click", function () {
+    document.querySelector("#section_height").scrollIntoView();
+})
 
 let btn_form = document.querySelectorAll(".choice");
 let black = "black";
